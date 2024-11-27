@@ -5,9 +5,8 @@ body {
     flex-direction: column;
 }
 header.nav-container {
+    background-color: #F1F0E8;
     display: flex;
-    padding-block: 1rem;
-    margin-inline: 2rem;
     justify-content: space-around;
     align-items: center;
     z-index: 9999;
@@ -32,11 +31,15 @@ header.nav-container .nav-list li a {
     color: black;
 }
 header.nav-container .nav-list .login {
-    color: #697565;
+    background-color: #697565;
+    color: white;
     font-size: 1rem;
     font-weight: 600;
 }
 header.nav-container .nav-list li:hover a {
-    background-color: #697565;
-    color: white;
+    color: #697565;
+}
+header.nav-container .nav-list .login:hover {
+    background-color: black;
+    color: #F1F0E8;
 }
