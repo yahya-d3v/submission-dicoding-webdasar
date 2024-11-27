@@ -36,7 +36,7 @@ header.nav-container .nav-list .login {
     font-size: 1rem;
     font-weight: 600;
 }
-header.nav-container .nav-list li:hover a {
+header.nav-container .nav-list .other:hover {
     color: #697565;
 }
 header.nav-container .nav-list .login:hover {
