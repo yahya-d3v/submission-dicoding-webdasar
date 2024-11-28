@@ -19,7 +19,13 @@ for (i = 0; i < slides.length; i++) {
 slides[slideIndex-1].style.display = "block";
 }
 
-function myFunction() {
+/* Dark Mode
+    function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+} 
+    */
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
