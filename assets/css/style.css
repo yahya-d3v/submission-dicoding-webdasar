@@ -14,6 +14,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
     z-index: 9999;
 }
 .social-media ul {
@@ -52,15 +53,18 @@ header {
 }
 .nav-container .nav-list .book {
     background-color: #697565;
-    color: white;
+    color: #F1F0E8;
     font-size: 1rem;
     font-weight: 600;
+    transition: 0.5s ease;
 }
 .nav-container .nav-list .other:hover {
     color: #697565;
+    transition: 0.5s ease;
 }
 .nav-container .social-media .other2:hover {
     color: black;
+    transition: 0.5s ease;
 }
 .nav-container .nav-list .book:hover {
     background-color: black;
@@ -85,6 +89,9 @@ header {
     text-align: justify;
     display: flex;
     flex-flow: column nowrap;
+}
+.benefit {
+    margin-left: -25px;
 }
 h1 {
     font-size: 2.5rem;
@@ -116,7 +123,6 @@ h1 ,.sub-judul {
 .mySlides {
     display: none;
 }
-/* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -124,23 +130,18 @@ h1 ,.sub-judul {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: #F1F0E8;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    font-size: 20px;
+    transition: 0.5s ease;
 }
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: #697565;
 }
-/* Caption text */
 .slide-image {
     width: 100%;
     max-height: 300px;
@@ -155,4 +156,73 @@ h1 ,.sub-judul {
     bottom: 8px;
     width: 100%;
     text-align: center;
+}
+.side-card {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-end: 0;
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    line-height: 10px;
+}
+.cedric {
+    width: 200px;
+    margin: 2rem;
+    border-radius: 30px;
+}
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+aside .side-social {
+    height: 100%;
+    display: flex;
+}
+main aside .side-social ul {
+    padding: 1rem 1rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-color: #ECDFCC;
+    display: flex;
+    flex-flow: column nowrap;
+}
+aside .side-social li {
+    list-style-type: none;
+}
+aside .side-social li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #697565;
+    transition: 0.5s ease;
+}
+aside .side-social li a:hover {
+    color: black;
+}
+footer {
+    padding: 10px;
+    margin-top: 20px;
+    color: #697565;
+    background-color: #ECDFCC;
+    font-weight: bold;
+    text-align: center;
+}
+.me {
+    text-decoration: none;
+    color: #697565;
+}
+.me:hover {
+    color: black;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
 }
