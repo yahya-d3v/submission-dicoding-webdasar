@@ -1,3 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+/* Media Query */
+@media screen and (max-width: 1200px) {
+    body main {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-media {
+        display: none;
+    }
+    body main .side-card {
+        width: 100%;
+        align-items: center;
+        justify-self: center;
+    }
+    body main .side-card .card {
+        width: 50%;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: smaller;
+    }
+    body main {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-media, .nav-list {
+        display: none;
+    }
+    body main .side-card {
+        width: 100%;
+        align-items: center;
+        justify-self: center;
+    }
+    body main .side-card .card {
+        width: fit-content;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+    }
+}
+/* Content */
 body {
     font-family: "Montserrat";
     margin: 0;
@@ -6,12 +54,17 @@ body {
     background-color: #2F3437;
     color: #F7F6F3;
 }
+main {
+    display: flex;
+    flex-direction: row;
+}
 header {
     position: sticky;
     top: 0;
 }
 .nav-container {
     background-color: #373C3F;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,11 +132,11 @@ header {
     padding: 25px;
     margin: 25px;
 }
-.content {
-    width: 75%;
+main .content {
+    width: 100%;
     text-align: justify;
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: row;
 }
 .benefit {
     margin-left: -25px;
@@ -109,15 +162,11 @@ h1 ,.sub-judul {
     object-fit: cover;
 }
 .side-card {
-    position: absolute;
-    inset-block: 0;
-    inset-inline-end: 0;
-    width: 25%;
+    width: fit-content;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
     line-height: 10px;
 }
 .cedric {
@@ -207,8 +256,4 @@ animation-duration: 2s;
 @keyframes fade {
 from {opacity: .4} 
 to {opacity: 1}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-.prev, .next,.text {font-size: 11px}
 }
